@@ -3,43 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Single Pens with Overlay</title>
-  <link rel="stylesheet" href="css/style.css">
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
+  
 </head>
 
 <body>
   <div class="container">
   <div class="well">
-    <!-- active pen grid-->
-    
-    <div class="single-pen">
-      <a href="https://player.twitch.tv/?channel=FreeCodeCamp"  target='_blank'>
-      <div class="cover-loaded">
-           <img class="centerIamge" src='https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-channel_offline_image-b8e133c78cd51cb0-1920x1080.png'>
+    <ul id="channels_container">
+      <li class="single_channel offline">
+         
+        <a href="https://player.twitch.tv/?channel=FreeCodeCamp" target="_blank" class="cover-link"></a>
+  
+        <!-- Create a div called cover so that the img and the overlay will inherit the same height-->
+           <img class="channel_img" src='https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-channel_offline_image-b8e133c78cd51cb0-1920x1080.png'>
         
-         <div id='cover-overlay'>
-        <h4>What is currently streaming</h4>
-      </div>
-       </div>
-     
-      </a>
+        
+        
+          <div class='cover-overlay'>
+            <h4>What is currently streaming</h4>
+          </div>
+        
+        <div class="single_channel-header">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png">
+          <span>FreeCodeCamp</span>
+          <span class='status_offline'>offline</span>
+        </div>
+      </li>
+
+
+     <li class="single_channel offline">
+         
+        <a href="https://player.twitch.tv/?channel=FreeCodeCamp" target="_blank" class="cover-link"></a>
+  
+        <!-- Create a div called cover so that the img and the overlay will inherit the same height-->
+           <img class="channel_img" src='https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-channel_offline_image-b8e133c78cd51cb0-1920x1080.png'>
+        
+        
+        
+          <div class='cover-overlay'>
+            <h4>What is currently streaming</h4>
+          </div>
+        
+        <div class="single_channel-header">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png">
+          <span>FreeCodeCamp</span>
+          <span class='status_offline'>offline</span>
+        </div>
+      </li>
+
+      <li class="single_channel offline">
+         
+        <a href="https://player.twitch.tv/?channel=FreeCodeCamp" target="_blank" class="cover-link"></a>
+  
+        <!-- Create a div called cover so that the img and the overlay will inherit the same height-->
+           <img class="channel_img" src='https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-channel_offline_image-b8e133c78cd51cb0-1920x1080.png'>
+        
+        
+        
+          <div class='cover-overlay'>
+            <h4>What is currently streaming</h4>
+          </div>
+        
+        <div class="single_channel-header">
+          <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png">
+          <span>FreeCodeCamp</span>
+          <span class='status_offline'>offline</span>
+        </div>
+      </li>
+
       
-      <div class="meta">
-        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png">
-        <span>FreeCodeCamp</span>
-        <span class='offline status'>offline</span>
-      </div>
-    </div>
-    
-    
-    <div class="single-pen">
-    </div>
-    <div class="single-pen">
-    </div>
-
-
-    <ul id="userList"></ul>
-
+      
 
   </div>
 
