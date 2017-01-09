@@ -19,7 +19,7 @@ body{
   max-width: 1000px;
   width: 90%;
   margin: auto;
-  /*background-color: blue;  */
+  /*  background-color: blue;*/
 }
 
 #channels_container{
@@ -152,11 +152,38 @@ button{
    z-index: 2;
 }
 
+  /* tablets?*/
+@media only screen and (max-width: 830px) {
+  .single_channel{
+    width: 49%;
+  }
+  
+  .single_channel:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .single_channel:nth-child(3n) {
+    margin-right: 2%;
+    
+  }
+  
+  .well{
+    background-color: blue;
+  }
+  
 
-@media only screen and (max-width: 768px) {
+}
+
+
+@media only screen and (max-width: 550px) {
   .single_channel{
     width: 100%;
+    height: 150px;
     margin-right: 0 !important;
+  }
+  
+ .well{
+    background-color: orange;
   }
 }
 
