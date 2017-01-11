@@ -1,5 +1,4 @@
 /*http://angrytools.com/gradient/*/
-/* https://codepen.io/themalni/full/jVLmQR/ */
 
 body{
  background-color: #6441a4;
@@ -14,15 +13,13 @@ body{
   width: 100%;
 }
 
-
 .well{
   max-width: 1000px;
   width: 90%;
   margin: auto;
- /* background-color: green;*/
 }
 
-#channels_container{
+#channelsList{
   margin-bottom: 50px;
   margin:auto;
   list-style:none;
@@ -31,13 +28,14 @@ body{
   -webkit-flex-wrap: wrap; /* Safari 6.1+ */
   display: flex !important;   
   flex-wrap: wrap;
+  clear: left;  
 }
 
 .single_channel{
   width: 32%;
   margin-right: 2%;
   float:left;
-  min-height: 250px;
+  min-height: 200px;
   margin-top: 2%;
   text-align: left;
   border-style: solid;
@@ -49,11 +47,10 @@ body{
 }
 
 .single_channel:nth-child(3n) {
-    margin-right: 0 !important;
+ margin-right: 0 !important;
 }
 
-
-.channel_name{
+.user_name{
   color:white;
   word-wrap: break-word;
 }
@@ -66,64 +63,33 @@ a:link {
     text-decoration: none;
 }
 
-.channel_img{
+.channel_prev-img{
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 
-.centerImage{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.single_channel-header{
+.user_info{
   background-color: #7d5bbe;
   margin-top: -1%;
-  min-height: 20%;
+  height: 25%;
   position: relative;
 }
 
-.profile_img , img{
-  width: 40px;
-  height: 40px;
+.user_img{
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  padding-top: 5px;
 }
 
-.channel_name{
-  margin-left: 5px;
-}
-
-.channel_name, .status_offline{
+.user_name, .status_offline{
  position: absolute;
- top: 20px;
-}
-
-
-#nav{
- color: blue;
-}
-
-button{
-  color: white;
-  float:left;
-  font-size: 14px;
-  width: 33.333333%;
-  padding: 10px 0px;
-  background-color: #7d5bbe;
-  cursor:pointer;
-}
-
-.online>.meta>p{
-  color: green;
+ top:30%;
 }
 
 .status_offline{
   color: red;
   right: 0;
-}
-
-.invalidUser>p{
-  color: gray;
 }
 
 .cover-overlay{
@@ -138,11 +104,10 @@ button{
   background: #7d5bbe;
 }
 
-
-  /* tablets?*/
 @media only screen and (max-width: 830px) {
   .single_channel{
     width: 49%;
+       min-height: 100px;
   } 
   
   .single_channel:nth-child(2n) {
@@ -150,14 +115,10 @@ button{
   }
 }
 
-
 @media only screen and (max-width: 550px) {
   .single_channel{
     width: 100%;
-    max-height: 100px;
+    min-height: 100px;
     margin-right: 0;
   }
 }
-
-
-
